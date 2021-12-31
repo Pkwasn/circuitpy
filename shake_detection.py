@@ -3,7 +3,6 @@ import board
 import busio
 import adafruit_lis3dh
 
-
 # MatrixPortal I2C Setup:
 i2c = busio.I2C(board.SCL, board.SDA)
 lis3dh = adafruit_lis3dh.LIS3DH_I2C(i2c, address=0x19)
