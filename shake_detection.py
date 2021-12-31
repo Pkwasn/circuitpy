@@ -14,7 +14,7 @@ lis3dh.range = adafruit_lis3dh.RANGE_2_G
 while True:
    	# The ".shake" function detects if the accelerometer is being shaken
     if lis3dh.shake(shake_threshold=15):
-		# shake_threshold can be anything between 0 and 30, however values near 0 are almost always being considered as shaking
+	# shake_threshold can be anything between 0 and 30, however values near 0 are almost always being considered as shaking
         print("Shaken")
 	
 	
