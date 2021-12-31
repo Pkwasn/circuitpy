@@ -12,9 +12,10 @@ lis3dh.range = adafruit_lis3dh.RANGE_2_G
 
 # First parameter is single or double tap (1 for single, 2 for double)
 # Secibd parameter is the threshold of the tap (How strong of a tap)
-lis3dh.set_tap(2, 60)
+lis3dh.set_tap(1, 10)
 
+print("Try tapping")
 while True:
-	if lis3dh.tapped:
-		print("Tapped!")
-		time.sleep(0.1)
+    if lis3dh.tapped:
+        print("Tapped!")
+        time.sleep(0.01)
